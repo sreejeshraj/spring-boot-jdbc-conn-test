@@ -24,9 +24,9 @@ public class MainClass implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws Exception {
 		System.out.println("\n\n***** Hello Spring Boot from console! *****\n\n");
 		String version = jdbcTemplate.queryForObject("SELECT version()",String.class);
-		System.out.println("\n\n**************************\n\n");
+		System.out.println("\n\n***************************************************************************************");
 		System.out.println("DB version: "+version);
-		System.out.println("\n\n**************************\n\n");
+		System.out.println("***************************************************************************************\n\n");
 		System.out.println("\n\n***** EXITING!!!  *****\n\n");
 		System.exit(0);
 	}
